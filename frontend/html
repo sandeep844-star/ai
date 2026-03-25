@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escalator Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Escalator Control Panel</h1>
+
+<div class="panel">
+    <button onclick="startEscalator()">Start</button>
+    <button onclick="stopEscalator()">Stop</button>
+
+    <br><br>
+
+    <label>Direction:</label>
+    <select id="direction" onchange="changeDirection()">
+        <option value="UP">UP</option>
+        <option value="DOWN">DOWN</option>
+    </select>
+
+    <br><br>
+
+    <label>Speed:</label>
+    <input type="range" id="speed" min="1" max="5" onchange="changeSpeed()">
+
+    <h2 id="status">Status: STOPPED</h2>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
